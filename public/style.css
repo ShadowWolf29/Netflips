@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "Lemon";
+    src: url("../lib/LEMONMILK-Regular.otf") format("truetype");
+}
+.logo{
+    height: 3em;
+    width: auto;
+}
+body{
+    background-color: #212121;
+    margin: 0;
+}
+video{
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+}
+.login{
+    margin-top: 10%;
+    background-color: black;
+    opacity: 0.9;
+    margin-bottom: 18%;
+}
+.lemon{
+    font-family: 'lemon';
+}
+.login-btn{
+    margin-bottom: 2em;
+}
+.card{
+    margin-bottom: 2em;
+}
+option{
+    color: #fff !important;
+}
+.radio-regis-none{
+    display: none;
+}
+input.select-dropdown.dropdown-trigger{
+    color: #fff;
+}
+option.select-dropdown.dropdown-trigger:first-child{
+    color: red;
+}
+.login-footer{
+    margin-top: -10%;
+}
+.swal2-icon.swal2-success::after, .swal2-icon.swal2-success::before{
+    background: #212121 !important;
+}
+.swal2-modal .swal2-title{
+    color: white !important;
+}
+#info{
+    height: 40vh;
+    width: 100%;
+    position: fixed;
+    background-color: #212121;
+}
+#navegacion{
+    margin-top: 40vh;
+    height: 50vh;
+    float: bottom;
+    width: 100%;
+    position: fixed;
+    background: rgb(156,39,176);
+background: linear-gradient(0deg, rgba(156,39,176,1) 0%, rgba(33,33,33,1) 100%);
+}
+#play-icon{
+    margin-top: 10%;
+    cursor: pointer;
+    color: white;
+}
+#play-text{
+    margin-top: -1%;
+    cursor: pointer;
+    color: white;
+}
+#play-icon:hover{
+    color: purple;
+}

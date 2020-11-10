@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css from local-->
+    <link type="text/css" rel="stylesheet" href="../lib/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="style.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="../lib/sweetalert2.min.css"  media="screen,projection"/>
+
+    <!--website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8"> 
+  </head>
+  <body>
+      <section id="navbar">
+        <div class="navbar-fixed ">
+            <nav class=" purple darken-3">
+              <div class="nav-wrapper container ">
+                <a class="brand-logo "><img class="logo" src="../images/logo.png" alt="logo"></a>
+                <ul class="right hide-on-med-and-down">
+                </ul>
+              </div>
+            </nav>
+          </div>
+      </section>
+      <section id="login">
+          <video src="fondo.mp4" autoplay loop></video>
+            <div class="container row">
+                <form class="col s12 z-depth-3 login lemon">
+                    <h2 class="center-align white-text">Iniciar sesion </h2>
+                    <div class="input-field col m12 s12"> 
+                        <input placeholder="Correo" id="correo_login" type="text" class="validate white-text">
+                        <label for="correo_login"></label>
+                    </div> 
+                    <div class="input-field col m12 s12">
+                        <input placeholder="Contraseña" id="contra_login" type="password" class="validate white-text">
+                        <label for="contra_login"></label>
+                    </div>
+                    
+                    <a id="Login_btn" class="waves-effect waves-light btn purple darken-1 right login-btn" type="submit">Ingresar</a>
+                    <span class="white-text center-align">¿No tienes cuenta? <a class="purple-text" href="#registrate">Registrate</a></span>
+                </form>
+            </div>
+      </section>
+      <section id="registrate" class="section scrollspy"> 
+          <div class="black"> 
+            <div class="container row">
+                <form class="col s12 z-depth-3 login lemon">
+                    <h2 class="center-align white-text">Registrate </h2>
+                    <div class="input-field col m6 s12">
+                        <input placeholder="Nombre" id="nombre_regis" type="text" class="validate white-text">
+                        <label for="nombre_regis"></label>
+                    </div>
+                    <div class="input-field col m6 s12">
+                        <input placeholder="Apellido" id="apellido_regis" type="text" class="validate white-text">
+                        <label for="apellido_regis"></label>
+                    </div>
+                    <div class="input-field col m6 s12">
+                        <input placeholder="Correo" id="correo_regis" type="text" class="validate white-text">
+                        <label for="correo_regis"></label>
+                    </div>  
+                    <div class="input-field col m6 s12">
+                        <input placeholder="Repetir correo" id="correo_regis2" type="text" class="validate white-text">
+                        <label for="correo_regis2"></label>
+                    </div> 
+                    <div class="input-field col m6 s12">
+                        <input placeholder="Contraseña" id="contra_regis" type="password" class="validate white-text">
+                        <label for="contra_regis"></label>
+                    </div>
+                    <div class="input-field col m6 s12">
+                        <input placeholder="Repetir contraseña" id="contra_regis2" type="password" class="validate white-text">
+                        <label for="contra_regis2"></label>
+                    </div>
+                   <div>
+                     <h4 class="center-align white-text">Selecciona plan de pago</h4>
+                     <div class="col s12 m4">
+                        <div class="card purple darken-3" id="card-mensual">
+                            <div class="card-content white-text">
+                                <span class="card-title">Plan mensual</span>
+                                <h5>12.99</h5>
+                                <a id="radio-mensual" class="btn-floating right waves-effect waves-light purple accent-3 radio-regis"><i class="material-icons">check</i></a>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="card purple darken-3" id="card-trimestral">
+                            <div class="card-content white-text">
+                                <span class="card-title">Plan 3 meses</span>
+                                <h5>29.99</h5>
+                                <a id="radio-trimestral" class="btn-floating right waves-effect waves-light purple accent-3 radio-regis"><i class="material-icons">check</i></a>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="card purple darken-3" id="card-anual">
+                            <div class="card-content white-text">
+                                <span class="card-title">Plan anual</span>
+                                <h5>99.99</h5>
+                                <a id="radio-anual" class="btn-floating right waves-effect waves-light purple accent-3 radio-regis"><i class="material-icons">check</i></a>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6">
+                        <h5 class="white-text">Seleccione metodo de pago:</h5>
+                    </div>
+                    <div class="input-field col m6 s12" >
+                        <select class="white-text">
+                          <option class="white-text" value="" disabled selected>Elije tu opcion</option>
+                          <option value="1">Tarjeta de credito</option>
+                          <option value="2">Pay Pal</option>
+                          <option value="3">Riñon</option>
+                        </select>
+                        <label>Metodo de pago</label>
+                      </div>
+                   </div>
+                    <a id="Regis_btn" class="waves-effect waves-light btn purple darken-1 right" type="submit">Registrate</a>
+                </form>
+            </div>
+        </div>
+      </section>
+      <section>
+        <footer class="page-footer login-footer grey darken-3">
+              <div class="row"></div>
+            </div>
+            <div class="footer-copyright grey darken-4">
+              <div class="container">
+                © 2020 Copyright Neon code
+              <a target="_blank" href="https://www.instagram.com/?hl=es-la" class="grey-text text-lighten-4 right" href="#!">Instagram <i class="material-icons">camera</i></a>
+              </div>
+            </div> 
+          </footer>
+      </section>
+
+
+    <!--Import materialize.js from local-->
+    <script type="text/javascript" src="../lib/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="../lib/main.js"></script>
+    
+  </body>
+</html>
